@@ -22,5 +22,6 @@ jobs:
           path: target/*.jar
       - uses: actions/upload-artifact@v3
         with:
+          if: always()
           name: site
           path: target/site
