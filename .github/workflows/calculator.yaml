@@ -18,9 +18,9 @@ jobs:
         run: mvn --batch-mode --update-snapshots verify
       - uses: actions/upload-artifact@v3
         with:
-          name: calculator-demo.jar
+          name: calculator-demo
           path: target/*.jar
       - uses: actions/upload-artifact@v3
         with:
           name: site
-          path: site
+          path: target/site
